@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  http: ^0.13.5
   web3dart: ^2.6.1
 
 dev_dependencies:

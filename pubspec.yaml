@@ -1,7 +1,7 @@
 name: shitcoin_price
 description: A new Flutter package project.
 version: 0.0.1
-
+homepage: https://github.com/SantiiRepair/shitcoin_price
 environment:
   sdk: '>=2.19.6 <3.7.0'
   flutter: ">=1.17.0"

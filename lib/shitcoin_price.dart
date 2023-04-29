@@ -2,18 +2,16 @@
 
 library shitcoin_price;
 
-import 'package:flutter/services.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:http/http.dart';
+import '../abi/router.dart';
 
 Future<String> ShitCoinPrice({
     String rpc = 'https://bsc-dataseed1.binance.org/',
     String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e',
-    String token = '0xC1DA031D459c574163e69E4370B465FaF3F5a7CF'
+    String token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'
     }) async {
   final Token = token;
-  final abi = await rootBundle.loadString('assets/router.json');
-
   final httpClient = Client();
   final ethClient = Web3Client(rpc, httpClient);
   final contract = DeployedContract(

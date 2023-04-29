@@ -1,3 +1,5 @@
+## Package Info
+
 This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of apikeys or registration required. 😎
 
 ## Features

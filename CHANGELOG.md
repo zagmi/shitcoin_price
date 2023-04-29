@@ -10,6 +10,6 @@
 
 * UPDATE: Custom values if user doesnt add anything.  
 
-## 0.0.31
+## 0.0.4
 
 * UPDATE: Tag.  

@@ -1,11 +1,11 @@
 name: shitcoin_price
 description: Package to get the price of a token based on the liquidity pool.
-version: 0.0.31
+version: 0.0.4
 homepage: https://github.com/SantiiRepair/shitcoin_price
 shitcoin_price:
   git:
     url: https://github.com/SantiiRepair/shitcoin_price.git
-    ref: 0.0.31
+    ref: 0.0.4
 
 environment:
   sdk: '>=2.19.6 <3.7.0'

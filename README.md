@@ -38,6 +38,6 @@ AIn this example we import the package function to get the price and we give it 
 
 ## Additional information
 
-Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+This package will be updated and added more features and utilities related to free price queries and market capitalization data, feel free to contribute!
+
+Greetings. ⚡

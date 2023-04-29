@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names, prefer_interpolation_to_compose_strings, avoid_print
+// ignore_for_file: constant_identifier_names, prefer_interpolation_to_compose_strings, avoid_print, void_checks
 
 library shitcoin_price;
 
@@ -6,7 +6,7 @@ import 'package:flutter/services.dart';
 import 'package:web3dart/web3dart.dart';
 import 'package:http/http.dart';
 
-void main() async {
+Future<String> main() async {
   const Token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
   final abi = await rootBundle.loadString('assets/router.json');
 
@@ -26,6 +26,6 @@ void main() async {
           EthereumAddress.fromHex('0xe9e7cea3dedca5984780bafc599bd69add087d56')
         ]
       ]);
-  final price = result[1] / (BigInt.from(10) ^ BigInt.from(18));
-  print('\$' + price.toStringAsFixed(2));
+  final String price = result[1] / (BigInt.from(10) ^ BigInt.from(18));
+  return price;
 }

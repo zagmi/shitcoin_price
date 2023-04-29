@@ -4,7 +4,7 @@ This package uses the pool contract of each router and different cryptocurrency 
 
 ## Features
 
-Get the price in USD of any token on the Ethereum network and its subnets such as Binance Smart Chain, Polygon and others more.
+Get the price in BUSD of any token on the Ethereum network and its subnets such as Binance Smart Chain, Polygon and others more.
 
 ## Getting started
 

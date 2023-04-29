@@ -1,10 +1,13 @@
+// ignore_for_file: constant_identifier_names, prefer_interpolation_to_compose_strings, avoid_print
+
 library shitcoin_price;
 
 import 'package:web3dart/web3dart.dart';
 import 'package:http/http.dart';
 
 void main() async {
-  final Token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
+
+  const Token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
   final abi = [
     {
       "inputs": [

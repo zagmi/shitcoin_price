@@ -29,7 +29,13 @@ You can call the function and give it the parameters it wants to query, for exam
 
 
 ```dart
-final price = await ShitCoinPrice(rpc: key, router: key, token: key);
+final priceDouble = await ShitCoinPrice.asDouble(rpc: key, router: key, token: key);
+print(priceDouble); // 2.688667399210412 CAKE-
+```
+
+```dart
+final priceBigInt = await ShitCoinPrice.asBigInt(rpc: key, router: key, token: key);
+print(priceBigInt); // 2688667399210411713 CAKE-
 ```
 
 In this example we import the package function to get the price and we give it the values to perform the query.

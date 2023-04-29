@@ -1,5 +1,5 @@
 name: shitcoin_price
-description: A new Flutter package project.
+description: Package to get the price of a token based on the liquidity pool.
 version: 0.0.1
 homepage: https://github.com/SantiiRepair/shitcoin_price
 environment:

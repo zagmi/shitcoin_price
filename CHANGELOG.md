@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * UPDATE: Minor.  
+
+## 0.0.5
+
+* UPDATE: Double and BigInt.  

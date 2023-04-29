@@ -6,9 +6,21 @@ Get the price in USD of any token on the Ethereum network and its subnets such a
 
 ## Getting started
 
-List prerequisites and provide or point to information on how to
-start using the package.
+Add the package to your pubspec.yaml file as shown below.
+```dart
 
+dependencies:
+
+  shitcoin_price: any
+
+```
+
+Then import the package into your code like this.
+```dart
+
+import 'package:shitcoin_price/shitcoin_price.dart';
+
+```
 ## Usage
 
 Include short and useful examples for package users. Add longer examples

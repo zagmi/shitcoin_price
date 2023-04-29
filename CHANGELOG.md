@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * UPDATE: Custom values if user doesnt add anything.  
+
+## 0.0.31
+
+* UPDATE: Tag.  

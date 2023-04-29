@@ -1,9 +1,8 @@
-Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of apikeys or registration required. 😎
 
 ## Features
 
-List what your package can do. Maybe include images, gifs, or videos.
+Get the price in USD of any token on the Ethereum network and its subnets such as Binance Smart Chain, Polygon and others more.
 
 ## Getting started
 

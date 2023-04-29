@@ -23,12 +23,18 @@ import 'package:shitcoin_price/shitcoin_price.dart';
 ```
 ## Usage
 
-Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+You can call the function and give it the parameters it wants to query, for example:
+
 
 ```dart
-const like = 'sample';
+final price = await ShitCoinPrice(rpc: key, router: key, token: key);
 ```
+
+AIn this example we import the package function to get the price and we give it the values to perform the query.
+
+- rpc: The rpc url on the network that we want to query.
+- router: The address of the router, Uniswap, Pancakeswap, SushiSwap, or other.
+- token: The address of the contract of the token that we want to consult the price.
 
 ## Additional information
 

@@ -1,9 +1,7 @@
 
   
   
-<div style='display: flex; 
-flex-direction: row; 
-justify-content: center;'>
+<div style="display: flex; flex-direction: row; justify-content: center;">
 
 ![Pub Version](https://img.shields.io/pub/v/shitcoin_price?color=green)
 

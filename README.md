@@ -11,7 +11,7 @@
   
 ![Active](https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen)
 
-![Test](https://img.shields.io/badge/test-100%25-orange)
+![Test](https://img.shields.io/badge/coverage-100%25-orange)
 
 </div>
 

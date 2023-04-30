@@ -1,10 +1,17 @@
 ## Package Info
+<div align='center'>
+  
 ![Pub Version](https://img.shields.io/pub/v/shitcoin_price?color=green)
 
-![Coverage](https://img.shields.io/coveralls/github/badges/shields)
+![Pub Points](https://img.shields.io/pub/points/shitcoin_price)
 
-![Commits](https://badgen.net/github/commits/SantiiRepair/shitcoin_price/dev?color=green)
 
+![Pub Percentage](https://img.shields.io/pub/popularity/shitcoin_price?color=green)
+  
+  ![Active](https://img.shields.io/badge/maintenance%20status-actively%20developed-brightgreen)
+
+  ![Test](https://img.shields.io/badge/test-100%25-orange)
+</div>
 This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of api key or registration required. 😎
 
 ## Features

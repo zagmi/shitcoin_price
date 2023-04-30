@@ -51,6 +51,8 @@ In this example we import the package function and use it to get the price of a 
 
 ## Additional information
 
+- [Check for rpc url here 🚨](https://rpc.info)
+
 This package will be updated and added more features and utilities related to free price queries and market capitalization data, feel free to contribute!
 
 Greetings. ⚡

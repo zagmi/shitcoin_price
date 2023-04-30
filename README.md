@@ -1,17 +1,13 @@
 
   
   
-<div id="div">
-
-
-
-
-
+<div style='display: flex; 
+flex-direction: row; 
+justify-content: center;'>
 
 ![Pub Version](https://img.shields.io/pub/v/shitcoin_price?color=green)
 
 ![Pub Points](https://img.shields.io/pub/points/shitcoin_price)
-
 
 ![Pub Percentage](https://img.shields.io/pub/popularity/shitcoin_price?color=green)
   
@@ -20,13 +16,6 @@
 ![Test](https://img.shields.io/badge/test-100%25-orange)
 
 </div>
-<style> 
-#div { 
-display: flex; 
-flex-direction: row; 
-justify-content: center; 
-} 
-</style>
 
 ## Package Info
 This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of api key or registration required. 😎

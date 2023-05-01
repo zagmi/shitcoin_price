@@ -20,7 +20,7 @@ class ShitCoinPrice {
         contract: contract,
         function: contract.function('getAmountsOut'),
         params: [
-          (BigInt.from(10) ^ BigInt.from(18)),
+          (BigInt.from(10).pow(18)),
           [
             EthereumAddress.fromHex(Token),
             EthereumAddress.fromHex(
@@ -52,7 +52,7 @@ class ShitCoinPrice {
         contract: contract,
         function: contract.function('getAmountsOut'),
         params: [
-          (BigInt.from(10) ^ BigInt.from(18)),
+          (BigInt.from(10).pow(18)),
           [
             EthereumAddress.fromHex(Token),
             EthereumAddress.fromHex(

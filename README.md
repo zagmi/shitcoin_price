@@ -36,14 +36,14 @@ You can call the function and give it the parameters it wants to query, for exam
 
 
 ```dart
-final priceDouble = await ShitCoinPrice().asDouble(rpc: key, router: key, token: key);
+final priceDouble = await ShitCoinPrice().asDouble(rpc: string, router: string, token: string);
 print(priceDouble); // 2.688667399210412 CAKE
 ```
 
 Or
 
 ```dart
-final priceBigInt = await ShitCoinPrice().asBigInt(rpc: key, router: key, token: key);
+final priceBigInt = await ShitCoinPrice().asBigInt(rpc: string, router: string, token: string);
 print(priceBigInt); // 2688667399210411713 CAKE
 ```
 
@@ -53,6 +53,7 @@ In this example we import the package function and use it to get the price of a 
 - router: The address of the router, Uniswap, Pancakeswap, SushiSwap, or other.
 - token: The address of the contract of the token that we want to consult the price.
 
+NOTE: Check the test folder for an example implementation.
 ## Additional information
 
 - [Check for rpc url here 🚨](https://rpc.info)

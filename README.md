@@ -36,14 +36,14 @@ You can call the function and give it the parameters it wants to query, for exam
 
 
 ```dart
-final priceDouble = await ShitCoinPrice.asDouble(rpc: key, router: key, token: key);
+final priceDouble = await ShitCoinPrice().asDouble(rpc: key, router: key, token: key);
 print(priceDouble); // 2.688667399210412 CAKE
 ```
 
 Or
 
 ```dart
-final priceBigInt = await ShitCoinPrice.asBigInt(rpc: key, router: key, token: key);
+final priceBigInt = await ShitCoinPrice().asBigInt(rpc: key, router: key, token: key);
 print(priceBigInt); // 2688667399210411713 CAKE
 ```
 

@@ -13,7 +13,7 @@ This package uses the pool contract of each router and different cryptocurrency 
 
 Get the price in BUSD of any token on the Ethereum network and its subnets such as Binance Smart Chain, Polygon and others more.
 
-## Getting started
+## Getting Started
 
 Add the package to your pubspec.yaml file as shown below.
 ```dart
@@ -54,7 +54,8 @@ In this example we import the package function and use it to get the price of a 
 - token: The address of the contract of the token that we want to consult the price.
 
 NOTE: Check the test folder for an example implementation.
-## Additional information
+
+## Additional Information
 
 - [Check for rpc url here 🚨](https://rpc.info)
 

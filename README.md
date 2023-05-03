@@ -1,5 +1,5 @@
 ## Package Info
-This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of api key or registration required. 😎
+This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free, no api key or registration required. 😎
 
 <div style="display: flex; justify-content: center;">
   <img src="https://img.shields.io/pub/v/shitcoin_price?color=green">

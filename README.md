@@ -1,5 +1,5 @@
 ## Package Info
-This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free, no api key or registration required. 😎
+This package uses the pool contract of each router and different cryptocurrency exchange platforms to take the price of any token even if it is not verified, it is free and without any kind of api key or registration required. 😎
 
 <div style="display: flex; justify-content: center;">
   <img src="https://img.shields.io/pub/v/shitcoin_price?color=green">
@@ -13,7 +13,7 @@ This package uses the pool contract of each router and different cryptocurrency 
 
 Get the price in BUSD of any token on the Ethereum network and its subnets such as Binance Smart Chain, Polygon and others more.
 
-## Getting Started
+## Getting started
 
 Add the package to your pubspec.yaml file as shown below.
 ```dart
@@ -36,14 +36,22 @@ You can call the function and give it the parameters it wants to query, for exam
 
 
 ```dart
-final priceDouble = await ShitCoinPrice().asDouble(rpc: string, router: string, token: string);
+String rpc = 'https://bsc-dataseed1.binance.org/';
+String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
+String token0 = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
+String token1 = '0xe9e7cea3dedca5984780bafc599bd69add087d56';
+final priceDouble = await ShitCoinPrice().asDouble(clientProvider, routerAddress, token0, token1);
 print(priceDouble); // 2.688667399210412 CAKE
 ```
 
 Or
 
 ```dart
-final priceBigInt = await ShitCoinPrice().asBigInt(rpc: string, router: string, token: string);
+String rpc = 'https://bsc-dataseed1.binance.org/';
+String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
+String token0 = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
+String token1 = '0xe9e7cea3dedca5984780bafc599bd69add087d56';
+final priceBigInt = await ShitCoinPrice().asBigInt(clientProvider, routerAddress, token0, token1);
 print(priceBigInt); // 2688667399210411713 CAKE
 ```
 
@@ -54,8 +62,7 @@ In this example we import the package function and use it to get the price of a 
 - token: The address of the contract of the token that we want to consult the price.
 
 NOTE: Check the test folder for an example implementation.
-
-## Additional Information
+## Additional information
 
 - [Check for rpc url here 🚨](https://rpc.info)
 

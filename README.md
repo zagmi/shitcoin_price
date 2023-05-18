@@ -40,6 +40,8 @@ String rpc = 'https://bsc-dataseed1.binance.org/';
 String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
 String token0 = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
 String token1 = '0xe9e7cea3dedca5984780bafc599bd69add087d56';
+httpClient = Client();
+clientProvider = Web3Client(rpc, httpClient!);
 final priceDouble = await ShitCoinPrice().asDouble(clientProvider, routerAddress, token0, token1);
 print(priceDouble); // 2.688667399210412 CAKE
 ```
@@ -51,6 +53,8 @@ String rpc = 'https://bsc-dataseed1.binance.org/';
 String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e';
 String token0 = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82';
 String token1 = '0xe9e7cea3dedca5984780bafc599bd69add087d56';
+httpClient = Client();
+clientProvider = Web3Client(rpc, httpClient!);
 final priceBigInt = await ShitCoinPrice().asBigInt(clientProvider, routerAddress, token0, token1);
 print(priceBigInt); // 2688667399210411713 CAKE
 ```

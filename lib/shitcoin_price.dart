@@ -8,24 +8,16 @@ import '../abi/router.dart';
 
 class ShitCoinPrice {
   Future<double> asDouble(
-      {String rpc = 'https://bsc-dataseed1.binance.org/',
-      String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e',
-      String token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'}) async {
-    final Token = token;
-    final httpClient = Client();
-    final ethClient = Web3Client(rpc, httpClient);
+      Web3Client rpc, String router, String token0, String token1) async {
+    final client = rpc;
     final contract = DeployedContract(
         ContractAbi.fromJson(abi, 'Router'), EthereumAddress.fromHex(router));
-    final result = await ethClient.call(
+    final result = await client.call(
         contract: contract,
         function: contract.function('getAmountsOut'),
         params: [
           (BigInt.from(10).pow(18)),
-          [
-            EthereumAddress.fromHex(Token),
-            EthereumAddress.fromHex(
-                '0xe9e7cea3dedca5984780bafc599bd69add087d56')
-          ]
+          [EthereumAddress.fromHex(token0), EthereumAddress.fromHex(token1)]
         ]);
     if (result.isNotEmpty && result[0].length > 1) {
       final res = (result[0][1] as BigInt).toString();
@@ -40,24 +32,16 @@ class ShitCoinPrice {
   }
 
   Future<BigInt> asBigInt(
-      {String rpc = 'https://bsc-dataseed1.binance.org/',
-      String router = '0x10ed43c718714eb63d5aa57b78b54704e256024e',
-      String token = '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82'}) async {
-    final Token = token;
-    final httpClient = Client();
-    final ethClient = Web3Client(rpc, httpClient);
+      Web3Client rpc, String router, String token0, String token1) async {
+    final client = rpc;
     final contract = DeployedContract(
         ContractAbi.fromJson(abi, 'Router'), EthereumAddress.fromHex(router));
-    final result = await ethClient.call(
+    final result = await client.call(
         contract: contract,
         function: contract.function('getAmountsOut'),
         params: [
           (BigInt.from(10).pow(18)),
-          [
-            EthereumAddress.fromHex(Token),
-            EthereumAddress.fromHex(
-                '0xe9e7cea3dedca5984780bafc599bd69add087d56')
-          ]
+          [EthereumAddress.fromHex(token0), EthereumAddress.fromHex(token1)]
         ]);
     if (result.isNotEmpty && result[0].length > 1) {
       final etherValueBigInt = result[0][1];

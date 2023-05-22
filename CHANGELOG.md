@@ -20,4 +20,12 @@
 
 ## 0.0.5
 
-* UPDATE: Double and BigInt.  
+* UPDATE: Double and BigInt.
+
+## 0.0.7+1
+
+* UPDATE: Flutter version.    
+
+## 0.0.8
+
+* UPDATE: Test example.    
